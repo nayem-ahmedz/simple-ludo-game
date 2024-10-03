@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Ludo Game | Project</title>
+    <meta name="author" content="Nayem Ahmed">
+    <meta name="description" content="Simple Ludo game is a game project created using HTML, CSS and Js by Nayem Ahmed, a passionate front-end developer">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="game-section">
+            <h1 class="game-name">Simple Ludo Game</h1>
+            <article class="game-inner">
+                <div class="game-inner-left">
+                    <img src="assets/game-front.png" alt="game-front-image" class="game-display">
+                </div>
+                <div class="game-inner-right">
+                    <div class="circle-outer">
+                        <div class="circle-inner">
+                            <p id="target">Target <span id="target-value">00</span> </p>
+                        </div>
+                    </div>
+                    <p id="user-score">Your Score <span id="score-value">00</span> </p>
+                    <p id="highest-score">Highest Score <span id="highest-score-value">00</span> </p>
+                </div>
+            </article>
+            <article class="game-chances">
+                <div class="gC-boxs"></div>
+                <div class="gC-boxs"></div>
+                <div class="gC-boxs"></div>
+                <div class="gC-boxs"></div>
+                <div class="gC-boxs"></div>
+            </article>
+            <button type="button" id="dice-btn">Roll Dice</button>
+        </section>
+    </main>
+</body>
+</html>
