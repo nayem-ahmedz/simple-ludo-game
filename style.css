@@ -2,17 +2,17 @@
     box-sizing: border-box;
 }
 body{
-    margin: 0; min-height: 100vh; background-image: linear-gradient(45deg, rgba(0,0,255,0.5), rgba(0,0,255,0.9));
+    margin: 0; min-height: 100vh; background-image: linear-gradient(45deg, rgba(50,50,150, 0.3), rgba(30,40,150,0.6));
 }
 
 main{
     margin-top: 10%; margin-bottom: 10%; padding: 15px;
 }
 .game-section{
-    max-width: 800px; background-color: #eee; margin: auto; padding: 25px 0 40px; border-radius: 10px; text-align: center; font-family: Arial, Helvetica, sans-serif;
+    max-width: 800px; background-color: #eee; margin: auto; padding: 25px 0 40px; border-radius: 10px; text-align: center; font-family: Arial, Helvetica, sans-serif; box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .game-name{
-    font-size: 2rem; margin: 0 auto 10px; font-family: Geneva, Tahoma, sans-serif; color: rgba(0,0,255,0.8); text-shadow: 0 0 2px red;
+    font-size: 2rem; margin: 0 auto 10px; font-family: Geneva, Tahoma, sans-serif; color: rgba(0,0,255,0.8);
 }
 
 /* Game inner */
@@ -23,16 +23,22 @@ main{
     padding: 35px 0 15px;
 }
 .game-inner-left{
-    border-right: 1px solid gray; flex-basis: 55%;
+    flex-basis: 55%;
 }
 .game-display{
-    width: 180px; height: auto; border-radius: 10px; margin-top: 10px;
+    width: 180px; height: auto; border-radius: 10px; margin-top: 10px; transition: all 0.3s;
+}
+.g-d-small{
+    transform: scale(0.7) rotate(360deg);
+}
+.blur-cont{
+    filter: blur(5px);
 }
 
 
 /* Game inner Right */
 .game-inner-right{
-    flex-basis: 45%;
+    flex-basis: 45%; border-left: 1px solid gray;
 }
 .circle-outer{
     width: 110px; height: 110px; border: 1px solid gray; border-radius: 50%; padding-top: 10px; margin: auto; background-image: conic-gradient(rgba(0,0,255, 0.75) 170deg, white 0deg); box-shadow: 0 0 5px gray;
