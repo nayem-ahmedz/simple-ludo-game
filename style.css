@@ -28,6 +28,9 @@ main{
 .game-display{
     width: 180px; height: auto; border-radius: 10px; margin-top: 10px; transition: all 0.3s;
 }
+#current-score{
+    margin: 35px auto auto; font-size: 1.2rem; color: gray;
+}
 .g-d-small{
     transform: scale(0.7) rotate(360deg);
 }
@@ -88,7 +91,7 @@ main{
     margin-top: 15px; padding: 10px 20px; border: none; border-radius: 10px; font-size: 16px;
 }
 #replay-btn:hover{
-    background-color: rgb(102, 39, 151); color: #eee;
+    background-color: rgb(102, 39, 151); color: #eee; cursor: pointer;
 }
 .blur{
     filter: blur(5px); pointer-events: none;
