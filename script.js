@@ -33,12 +33,11 @@ playBtn.addEventListener('click', ()=>{
         setTimeout(changeDisplay, 400, score, value);
         document.getElementById('current-score').textContent = value;
         chances--;
-        console.log(chances);
         gameChances[chances].classList.add('hide-out');
         if(chances===1)
             gameChances[0].style.backgroundColor = 'rgba(255,0,0,0.7)';
         if(score>=targetValue || chances===0){ ////if target is reached before 5 tries || 5 tries
-            showResult(score);
+            setTimeout(showResult, 1300, score);
         }
     }
 });

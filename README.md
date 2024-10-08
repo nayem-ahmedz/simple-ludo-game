@@ -26,6 +26,6 @@
 * created on 4 October 2024
 * completed on -
 * version 1.0
-* last updated on 7 October 2024
+* last updated on 9 October 2024
 
 ### Thanks! Have a look at live reload of this site at [simple-ludo-game.netlify.app]
